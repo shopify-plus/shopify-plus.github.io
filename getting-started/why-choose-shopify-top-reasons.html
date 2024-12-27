@@ -30,10 +30,10 @@
           <div class="container">
             <div class="row">
               <div class="col-9 social">
-                <a href="#"><span class="fa fa-twitter"></span></a>
+                <!-- <a href="#"><span class="fa fa-twitter"></span></a>
                 <a href="#"><span class="fa fa-facebook"></span></a>
                 <a href="#"><span class="fa fa-instagram"></span></a>
-                <a href="#"><span class="fa fa-youtube-play"></span></a>
+                <a href="#"><span class="fa fa-youtube-play"></span></a> -->
               </div>
               <div class="col-3 search-top">
                 <!-- <a href="#"><span class="fa fa-search"></span></a> -->
@@ -152,7 +152,19 @@
             <img src="./featured-image-why-choose-shopify-top-reasons.webp" alt="A visually appealing Shopify storefront example" title="Shopify Storefront Example" class="img-fluid mb-5">
              <div class="post-meta">
                         <span class="author mr-2"><img src="../images/author-sushil.webp" alt="Author Sushil Mohan Shopify Developer" class="mr-2"> Sushil Mohan</span>&bullet;
-                        <span class="mr-2">Dec 27, 2024 </span>
+                        <span class="mr-2">Dec 27, 2024</span>&bullet;
+                        <span class="social">
+                          Share This Post: 
+                          <a href="#" id="facebook-share" class="p-2 facebook"><span class="fa fa-facebook"></span> </a>
+                          <a href="#" id="twitter-share" class="p-2 twitter"><span class="fa fa-twitter"></span> </a>
+                          <a href="#" id="linkedin-share" class="p-2 linkedin"><span class="fa fa-linkedin"></span> </a>
+                          <a href="#" id="reddit-share" class="p-2 reddit"><span class="fa fa-reddit"></span> </a>
+                          <a href="#" id="whatsapp-share" class="p-2 whatsapp"><span class="fa fa-whatsapp"></span> </a>
+                          <a href="#" id="telegram-share" class="p-2 telegram"><span class="fa fa-telegram"></span> </a>
+                          <a href="#" id="medium-share" class="p-2 medium"><span class="fa fa-medium"></span> </a>
+                          <a href="#" id="tumblr-share" class="p-2 tumblr"><span class="fa fa-tumblr"></span> </a>
+                          <a href="#" id="pinterest-share" class="p-2 pinterest"><span class="fa fa-pinterest"></span> </a>
+                        </span>
                         <!-- <span class="ml-2"><span class="fa fa-comments"></span> 3</span> -->
                       </div>
             <h1 class="mb-4">Why Choose Shopify? Top Reasons It’s the Best Platform for Your Online Store</h1>
@@ -235,15 +247,9 @@
                 <div class="bio-body">
                   <h2>Sushil Mohan</h2>
                   <p>
-                    With over 4 years of experience as a Shopify developer, I am specializes in building robust, user-friendly online stores. Their expertise spans theme customization, app integration, and ecommerce optimization, making them a trusted resource for Shopify-related insights and strategies.
+                    With over 4 years of experience as a Shopify developer, I am specialized in building robust, user-friendly online stores. Their expertise spans theme customization, app integration, and ecommerce optimization, making them a trusted resource for Shopify-related insights and strategies.
                     </p>
-                  <p><a href="#" class="btn btn-primary btn-sm rounded">Read my bio</a></p>
-                  <p class="social">
-                    <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
-                    <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
-                    <a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
-                    <a href="#" class="p-2"><span class="fa fa-youtube-play"></span></a>
-                  </p>
+                  <p><a href="#" class="btn btn-primary btn-sm rounded author-linkedin">Linked <span class="fa fa-linkedin"></span> </a></p>
                 </div>
               </div>
             </div>
@@ -427,23 +433,17 @@
                   <div class="mb-5">
                     <h3>Quick Links</h3>
                     <ul class="list-unstyled">
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Travel</a></li>
-                      <li><a href="#">Adventure</a></li>
-                      <li><a href="#">Courses</a></li>
-                      <li><a href="#">Categories</a></li>
+                      <li><a href="../about.html">About Us</a></li>
+                      <li><a href="../contact.html">Contact Us</a></li>
+                      <li><a href="../sitemap.html">Sitemap</a></li>
+
                     </ul>
                   </div>
                   
                   <div class="mb-5">
                     <h3>Social</h3>
                     <ul class="list-unstyled footer-social">
-                      <li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li>
-                      <li><a href="#"><span class="fa fa-facebook"></span> Facebook</a></li>
-                      <li><a href="#"><span class="fa fa-instagram"></span> Instagram</a></li>
-                      <li><a href="#"><span class="fa fa-vimeo"></span> Vimeo</a></li>
-                      <li><a href="#"><span class="fa fa-youtube-play"></span> Youtube</a></li>
-                      <li><a href="#"><span class="fa fa-snapchat"></span> Snapshot</a></li>
+                      <li><a href="https://www.linkedin.com/in/sushil-m-37694b116/"><span class="fa fa-linkedin"></span> Linkedin</a></li>
                     </ul>
                   </div>
                 </div>
@@ -478,5 +478,19 @@
 
     
     <script src="../js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentURL = encodeURIComponent(window.location.href);
+            document.getElementById("facebook-share").href = `https://www.facebook.com/sharer/sharer.php?u=${currentURL}`;
+            document.getElementById("twitter-share").href = `https://twitter.com/intent/tweet?url=${currentURL}`;
+            document.getElementById("linkedin-share").href = `https://www.linkedin.com/shareArticle?mini=true&url=${currentURL}`;
+            document.getElementById("reddit-share").href = `https://www.reddit.com/submit?url=${currentURL}`;
+            document.getElementById("whatsapp-share").href = `https://api.whatsapp.com/send?text=Check%20this%20out%3A%20${currentURL}`;
+            document.getElementById("telegram-share").href = `https://t.me/share/url?url=${currentURL}`;
+            document.getElementById("medium-share").href = `https://medium.com/new-story?url=${currentURL}`;
+            document.getElementById("tumblr-share").href = `https://www.tumblr.com/widgets/share/tool?canonicalUrl=${currentURL}`;
+            document.getElementById("pinterest-share").href = `https://pinterest.com/pin/create/button/?url=${currentURL}`;
+        });
+  </script>
   </body>
 </html>
