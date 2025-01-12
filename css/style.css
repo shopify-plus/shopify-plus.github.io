@@ -317,6 +317,8 @@ header {
 
 .site-section {
   padding: 7em 0; }
+  .site-section.py-lg {
+    padding: 0em 0; }
   .site-section.py-md {
     padding: 3em 0; }
   .site-section.py-sm {
