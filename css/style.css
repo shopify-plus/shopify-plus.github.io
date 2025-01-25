@@ -4,6 +4,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.9;
+  border-top: 10px solid #0a66c2;
   color: #6c757d; }
 
 a {
@@ -12,7 +13,9 @@ a {
   transition: .3s all ease;
   text-decoration: none; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none; 
+    cursor: pointer;
+  }
 
 h1, h2, h3, h4, h5 {
   color: #000;
@@ -21,9 +24,9 @@ h1, h2, h3, h4, h5 {
 .wrap {
   max-width: 1250px;
   margin: 0 auto;
-  background: #fff;
-  -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1); }
+  /* -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);  */
+}
 
 header {
   position: relative;
@@ -31,8 +34,8 @@ header {
   left: 0;
   width: 100%;
   z-index: 5;
-  font-weight: 400;
-  background: #fff !important; }
+  font-weight: 400; 
+}
   header .navbar-brand {
     text-transform: uppercase;
     letter-spacing: .2em;
