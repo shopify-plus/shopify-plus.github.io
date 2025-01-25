@@ -481,7 +481,9 @@ header {
   -o-transition: .3s all ease;
   transition: .3s all ease;
   margin-bottom: 30px;
-  position: relative; }
+  position: relative; 
+  background-color: #fff;
+}
   .blog-entries .blog-entry:hover, .blog-entries .blog-entry:focus {
     opacity: .7;
     top: -1px;
