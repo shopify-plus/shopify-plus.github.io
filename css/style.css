@@ -1093,6 +1093,7 @@ textarea.form-control {
 .post-entry-horzontal {
   margin-bottom: 30px; }
   .post-entry-horzontal a {
+    background-color: #fff;
     overflow: hidden;
     display: table;
     position: relative;
